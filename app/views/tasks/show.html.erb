@@ -1,0 +1,8 @@
+<h1><%= Task %></h1>
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><%= Complete %></p>
+<%= check_box_tag :completed, 0, @task.completed, class: 'form-control'%>
+<%= link_to "Back", tasks_path %>
+<%= link_to "update check", tasks_path %>
+<%= link_to "Edit", edit_task_path(@task.id) %>
